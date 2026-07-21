@@ -1,13 +1,13 @@
 ("Welcome to my first site!");
 alert("Welcome to my first site!");
 function showMessage() {
-  alert("Bro, CSS + JS dono chal rahe hain!");
+  alert("Bro, CSS + Allah ap par rehmatain nazil farmay!");
 }
 function changeBackground() {
   document.body.style.backgroundColor = "yellow";
 }
 function changeText() {
-  document.querySelector("p").innerText = "Bro, JS chal raha hai!";
+  document.querySelector("p").innerText = "Bro, Allah apko khush rakhy!";
 }
 function randomBackground() {
   const colors = ["red", "blue", "green", "yellow", "purple", "orange"];
@@ -28,9 +28,6 @@ function showQuote() {
   ];
   const random = quotes[Math.floor(Math.random() * quotes.length)];
   alert(random);
-}
-function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode");
 }
 function addNumbers() {
   let n1 = parseFloat(document.getElementById("num1").value);
@@ -87,18 +84,17 @@ function guessNumber() {
   } else {
     alert("Try again!");
   }
-}function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode");
-}
-let darkModeOn = false;
+  let darkModeOn = false;
 
 function toggleDarkMode() {
-  if (!darkModeOn) {
-    document.body.classList.add("dark-mode");
-    darkModeOn = true;
-  } else {
-    document.body.classList.remove("dark-mode");
-    darkModeOn = false;
-  }
+    const btn = document.querySelector("button[onclick='toggleDarkMode()']");
+    if (!darkModeOn) {
+        document.body.classList.add("dark-mode");
+        btn.textContent = "Light Mode";
+        darkModeOn = true;
+    } else {
+        document.body.classList.remove("dark-mode");
+        btn.textContent = "Dark Mode";
+        darkModeOn = false;
+    }
 }
-
