@@ -11,4 +11,13 @@ h1 {
 p {
   color: green;
   font-size: 20px;
+}.dark-mode {
+  background-color: black;
+  color: white;
+}.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+
 }
